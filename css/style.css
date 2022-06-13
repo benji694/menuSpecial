@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+header ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0px;
+    transition: all .2s;
+}
+header ul li{
+    padding: 1rem;
+    border: solid black 1px;
+}
+.hide{
+    margin-top: -13rem;
+}
+header a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    header a{
+        display: none;
+    }
+    .hide{
+        margin-top: 0;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav ul li{
+        flex: 1;
+    }
+}
